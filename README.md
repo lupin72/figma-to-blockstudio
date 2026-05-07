@@ -1,5 +1,7 @@
 # Figma to BlockStudio Specification Generator
 
+![Header](assets/header.png)
+
 A comprehensive skill for converting Figma designs into production-ready BlockStudio (WordPress block framework) specifications with state management, incremental processing, and automatic variant detection.
 
 ## Features
