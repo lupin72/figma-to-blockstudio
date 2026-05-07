@@ -360,5 +360,5 @@ MIT License - See LICENSE file for details
 
 ## Credits
 
-Created for figma-to-spec project
+Created for figma-to-blockstudio project
 Designed for WordPress theme development with BlockStudio framework
