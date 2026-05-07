@@ -1,0 +1,182 @@
+{
+  "version": "1.0",
+  "namespace": "theme",
+  "lastUpdated": "2026-05-07T14:30:00Z",
+  "outputDirectory": "./blockstudio-specs",
+  "figmaFile": {
+    "fileKey": "LhiC7E0v1YNzpezgHqHMrn",
+    "fileName": "Website Design"
+  },
+  "designTokens": {
+    "colors": {
+      "primary": "#1A1A1A",
+      "secondary": "#4A90E2",
+      "text": "#333333",
+      "heading": "#000000",
+      "background": "#FFFFFF",
+      "backgroundAlt": "#F5F5F5",
+      "border": "#E0E0E0",
+      "accent": "#FF6B6B"
+    },
+    "typography": {
+      "fontHeading": "'Inter', sans-serif",
+      "fontBody": "'Inter', sans-serif",
+      "sizeH1": "3rem",
+      "sizeH2": "2.5rem",
+      "sizeH3": "2rem",
+      "sizeH4": "1.5rem",
+      "sizeBody": "1rem",
+      "sizeSmall": "0.875rem",
+      "weightHeading": "700",
+      "weightBody": "400",
+      "weightBold": "600",
+      "lineHeightHeading": "1.2",
+      "lineHeightBody": "1.6"
+    },
+    "spacing": {
+      "xs": "0.5rem",
+      "sm": "1rem",
+      "md": "2rem",
+      "lg": "3rem",
+      "xl": "4rem",
+      "xxl": "6rem"
+    },
+    "layout": {
+      "containerMaxWidth": "1200px",
+      "containerPadding": "1rem",
+      "gridColumns": "12",
+      "gridGap": "2rem",
+      "breakpointMobile": "768px",
+      "breakpointTablet": "1024px",
+      "breakpointDesktop": "1440px"
+    }
+  },
+  "theme": {
+    "header": {
+      "nodeId": "1:152",
+      "hash": "abc123def456",
+      "lastModified": "2026-05-07T14:00:00Z",
+      "fields": ["logo", "navigation", "ctaButton"]
+    },
+    "footer": {
+      "nodeId": "1:289",
+      "hash": "def456ghi789",
+      "lastModified": "2026-05-07T14:00:00Z",
+      "fields": ["copyrightText", "footerColumns", "socialLinks"]
+    }
+  },
+  "blocks": {
+    "hero-section": {
+      "hash": "xyz789abc123",
+      "variants": ["default", "with-overlay", "centered"],
+      "fields": ["heading", "description", "backgroundImage", "ctaButton", "showOverlay", "alignment"],
+      "fieldTypes": ["text", "textarea", "files", "link", "toggle", "select"],
+      "layout": "hero",
+      "pattern": "hero",
+      "nodeIds": ["1:200", "19:1500", "35:2100"],
+      "usedInPages": ["home", "about", "services"],
+      "lastModified": "2026-05-07T14:25:00Z",
+      "status": "complete"
+    },
+    "feature-grid": {
+      "hash": "mno456pqr789",
+      "variants": ["default", "compact"],
+      "fields": ["items"],
+      "fieldTypes": ["repeater"],
+      "layout": "grid",
+      "pattern": "feature",
+      "nodeIds": ["1:350", "35:2300"],
+      "usedInPages": ["home", "services"],
+      "lastModified": "2026-05-07T14:10:00Z",
+      "status": "complete"
+    },
+    "testimonial-slider": {
+      "hash": "stu123vwx456",
+      "variants": ["default"],
+      "fields": ["items"],
+      "fieldTypes": ["repeater"],
+      "layout": "carousel",
+      "pattern": "testimonial",
+      "nodeIds": ["1:500"],
+      "usedInPages": ["home"],
+      "lastModified": "2026-05-07T14:05:00Z",
+      "status": "complete"
+    },
+    "mission-statement": {
+      "hash": "yza789bcd012",
+      "variants": ["default"],
+      "fields": ["heading", "content", "image", "imagePosition"],
+      "fieldTypes": ["text", "wysiwyg", "files", "select"],
+      "layout": "split",
+      "pattern": "content-image",
+      "nodeIds": ["19:1700"],
+      "usedInPages": ["about"],
+      "lastModified": "2026-05-07T14:20:00Z",
+      "status": "complete"
+    },
+    "team-grid": {
+      "hash": "efg345hij678",
+      "variants": ["default"],
+      "fields": ["members"],
+      "fieldTypes": ["repeater"],
+      "layout": "grid",
+      "pattern": "card-grid",
+      "nodeIds": ["19:1900"],
+      "usedInPages": ["about"],
+      "lastModified": "2026-05-07T14:22:00Z",
+      "status": "complete"
+    },
+    "service-card": {
+      "hash": "klm901nop234",
+      "variants": ["default", "with-icon"],
+      "fields": ["icon", "title", "description", "link", "showIcon"],
+      "fieldTypes": ["icon", "text", "textarea", "link", "toggle"],
+      "layout": "card",
+      "pattern": "card-grid",
+      "nodeIds": ["35:2500", "35:2600"],
+      "usedInPages": ["services"],
+      "lastModified": "2026-05-07T14:28:00Z",
+      "status": "complete"
+    },
+    "cta-banner": {
+      "hash": "qrs567tuv890",
+      "variants": ["default"],
+      "fields": ["heading", "description", "ctaButton", "backgroundColor"],
+      "fieldTypes": ["text", "textarea", "link", "color"],
+      "layout": "centered",
+      "pattern": "cta",
+      "nodeIds": ["1:600", "19:2000", "35:2700"],
+      "usedInPages": ["home", "about", "services"],
+      "lastModified": "2026-05-07T14:30:00Z",
+      "status": "complete"
+    }
+  },
+  "pages": {
+    "home": {
+      "nodeId": "1:4",
+      "processedAt": "2026-05-07T14:00:00Z",
+      "blocksUsed": ["hero-section", "feature-grid", "testimonial-slider", "cta-banner"],
+      "screenshot": "pages/home/page-overview.png"
+    },
+    "about": {
+      "nodeId": "19:1403",
+      "processedAt": "2026-05-07T14:20:00Z",
+      "blocksUsed": ["hero-section", "mission-statement", "team-grid", "cta-banner"],
+      "screenshot": "pages/about/page-overview.png"
+    },
+    "services": {
+      "nodeId": "35:2050",
+      "processedAt": "2026-05-07T14:28:00Z",
+      "blocksUsed": ["hero-section", "service-card", "feature-grid", "cta-banner"],
+      "screenshot": "pages/services/page-overview.png"
+    }
+  },
+  "statistics": {
+    "totalBlocks": 7,
+    "totalVariants": 11,
+    "totalPages": 3,
+    "averageFieldsPerBlock": 3.7,
+    "mostUsedBlock": "cta-banner",
+    "lastProcessed": "2026-05-07T14:30:00Z"
+  }
+}
